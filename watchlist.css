@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow:auto;
+  }
+  .first{
+    text-align: center;
+    margin-top: 100px;
+  }
+  .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: linear-gradient(to right, #ffffff, #eef5ff);
+
+  }
+.first h{
+    font-weight: bold;
+}
+.button1{
+    background-color: blue;
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+.button1:hover{
+  background-color: #ffcc00;
+  color: black;
+}
+
+.images{
+    width: 50px;
+    image-resolution: 50px;
+    size: 10%;
+}
+.second{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.container2 h{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  font-weight: 900;
+  font-size: 140%;
+}
+.slideshow-container{
+  width: 80%;
+  margin: 50px auto;
+  position: relative;
+}
+.steps{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 20px;
+}
+.step{
+  width: 40px;
+  height: 40px;
+  background-color: #bbb;
+  color: #333;
+  font-size: 18px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+}
+.step.active{
+  background-color: #333;
+  color: #fff;
+}
+.highlight-line{
+  position: absolute;
+  height: 4px;
+  background-color: #ffcc00;
+  width: 0;
+  bottom: 0;
+  transition: 0.4s ease;
+}
+.slide{
+   display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.slide.active {
+  display: block;
+}
+footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #703333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 16px;
+  z-index: 1000;
+}
+.advisory-letter{
+  animation: fade 6s infinite ;
+}
+@keyframes fade {
+  0%,100%{
+    opacity: 1;
+  }
+  10%{
+    opacity: 1;
+  }
+  90%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}

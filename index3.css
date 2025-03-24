@@ -1,0 +1,21 @@
+.first p{
+  font-weight: bold;
+}
+.first h1{
+    justify-content: center;
+    text-align: center;
+    text-decoration: underline;
+}
+body{
+    background-color:rgb(83, 245, 191) ;
+} 
+.first table{
+    border-collapse:collapse ;
+    width: 100%;
+
+}
+.first table th,td{
+   border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+}

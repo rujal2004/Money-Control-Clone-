@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index4.css" />
+</head>
+<body>
+    <div class="first">
+    <p>It’s all coming together
+    in your new portfolio!</p>
+    </div>
+    <div class="second">
+    <h4>Don’t have a portfolio yet?</h4>
+      <style>
+        body {
+          font-family: Arial, sans-serif;
+        }
+    
+        #modal-overlay {
+          display: none; 
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(0, 0, 0, 0.5);
+          justify-content: center;
+          align-items: center;
+        }
+        #modal-container {
+          display: flex;
+          background: white;
+          border-radius: 8px;
+          overflow: hidden;
+          max-width: 800px;
+          width: 100%;
+          box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+        }
+    
+        #modal-content {
+          padding: 20px;
+          width: 50%;
+          box-sizing: border-box;
+          position: relative;
+        }
+        .social-login {
+          display: flex;
+          gap: 10px;
+          margin-bottom: 15px;
+        }
+    
+        .social-btn {
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          border: none;
+          font-size: 16px;
+          color: white;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+        }
+    
+        .google { background-color: #db4437; }
+        .facebook { background-color: #4267b2; }
+        .apple { background-color: #333; }
+    
+        .divider {
+          text-align: center;
+          margin: 15px 0;
+          color: #aaa;
+        }
+    
+        #mobile-number {
+          width: 100%;
+          padding: 10px;
+          margin: 10px 0;
+          border: 1px solid #ddd;
+          border-radius: 5px;
+        }
+    
+        #get-otp {
+          width: 100%;
+          padding: 10px;
+          background-color: #0073e6;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+    
+        #close-modal {
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          font-size: 18px;
+          cursor: pointer;
+        }
+    
+        #info-panel {
+          padding: 20px;
+          width: 50%;
+          background: #e0f7fa;
+          color: #00796b;
+          box-sizing: border-box;
+        }
+    
+        #info-panel h3 {
+          margin-top: 0;
+        }
+    
+        #info-panel ul {
+          list-style: none;
+          padding: 0;
+        }
+    
+        #info-panel li {
+          display: flex;
+          align-items: center;
+          font-size: 16px;
+          margin: 10px 0;
+        }
+      </style>
+    </head>
+    <body>
+  
+      <button id="create-portfolio-btn">Create Portfolio</button>
+    
+ 
+      <div id="modal-overlay">
+        <div id="modal-container">
+      
+          <div id="modal-content">
+            <span id="close-modal">&times;</span>
+            <h2>Create an Account</h2>
+            <div class="social-login">
+              <button class="social-btn google">G</button>
+              <button class="social-btn facebook">F</button>
+              <button class="social-btn apple">A</button>
+            </div>
+            <div class="divider">OR</div>
+            <input type="text" id="mobile-number" placeholder="Enter 10-digit mobile number">
+            <button id="get-otp">Get OTP</button>
+            <p>Already have an account? <a href="#">Login</a></p>
+          </div>
+
+          <div id="info-panel">
+            <h3>Create an account with MoneyControl</h3>
+            <p>& enjoy our below features for FREE!</p>
+            <ul>
+              <li>📊 Portfolio & Watchlist</li>
+              <li>💬 Forums</li>
+              <li>🔔 Stock & Portfolio Alerts</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    
+      <script>
+        const modalOverlay = document.getElementById('modal-overlay');
+        const createPortfolioBtn = document.getElementById('create-portfolio-btn');
+        const closeModalBtn = document.getElementById('close-modal');
+    
+        createPortfolioBtn.addEventListener('click', () => {
+          modalOverlay.style.display = 'flex'; 
+        });
+    
+       
+        closeModalBtn.addEventListener('click', () => {
+          modalOverlay.style.display = 'none'; 
+        });
+    
+        window.addEventListener('click', (event) => {
+          if (event.target === modalOverlay) {
+            modalOverlay.style.display = 'none';
+          }
+        });
+      </script>
+    </body>
+    </html>
+    
+    
+    <p>Start tracking your investments in stocks, mutual <br>fund, gold, bank deposits, property...</p>
+    <div class="second1">
+    <span class="line"></span>
+    <h3>or</h3>
+    <span class="line"></span>
+    </div>
+    </div>
+    <div class="fourth">
+    <h4 style="color: blue">Track Prices using Watchlist »</h4>
+    <p>Create a watchlist to start tracking prices for your <br>shortlisted stocks.</p>
+    <div class="under"></div>
+    </div>
+    <div class="fifth">
+    <p></p>
+    </div>
+    <div class="sixth">
+    <h3>Existing User</h3>
+    <button class="button1" id = "button1">Login to Portfolio</button>
+    <p>Get real time trading updates of the day's profit and loss.</p>
+    </div>
+    <div class="seventh">
+    <p style="color:rgb(176, 176, 14)">Note:</p> <p>New Portfolio is available to only selected users for now. All our registered users will be migrated to all-new portfolio in the next couple of months. Stay tuned!</p>
+    </div>
+    <div class="eight"></div>
+    <div class="nine">
+        f you are new to investment, first you will need to open a trading account with a broker
+    </div>
+    <div class="ten">
+        <p>Open a Trading Account »
+
+        </p>
+    </div>
+    <div class="eleven">
+        <img src="images/18.png "style="width: 80% ; height: auto;" >
+    </div>
+    <div class="twelve">
+        <h2>Get access to everything important about your investments<br> in a single place</h2>
+    </div>
+    <div class="container">
+       
+        <div class="center-marker">
+            <div class="center-icon">
+                <img src="images/19.png" alt="Center Icon">
+            </div>
+            <p class="center-text">your <span class="investment">INVESTMENT</span></p>
+        </div>
+
+        <div class="item item1">
+            <img src="images/20.png" alt="Icon">
+            <p>Research from top brokerage houses in the country</p>
+        </div>
+
+        <div class="item item2">
+      <img src="images/21.png" alt="Icon">
+            <p>Recommendation from experts like Sudarshan Sukhani, C K Narayana, Prakash Gaba</p>
+        </div>
+
+        <div class="item item3">
+            <img src="images/22.png" alt="Icon">
+            <p>Alerts on your stocks</p>
+        </div>
+
+        <div class="item item4">
+            <img src="images/23.png" alt="Icon">
+            <p>Corporate action updates on your stocks & mutual funds</p>
+        </div>
+
+        <div class="item item5">
+            <img src="images/24.png" alt="Icon">
+            <p>Analysis on your investments</p>
+        </div>
+
+        <div class="item item6">
+            <img src="images/25.png" alt="Icon">
+            <p>Loss, Capital Gain, Performance, Inflow, Tax and other Reports</p>
+        </div>
+
+        <div class="item item7">
+            <img src="images/26.png" alt="Icon">
+            <p>Filtered news for your stocks</p>
+        </div>
+    </div>
+    <div class="fifteen">
+        <h3>Always stay updated with your portfolio</h3>
+        <p>All your scheduled transactions are automatically updated</p>
+        <div class="carousel-container">
+          
+            <div class="slide active" id="slide1">
+              <div class="card" style="border-color: #ff00ff;">
+                <h2>Stocks</h2>
+                <div class="features">
+                  <p><span class="check">&#10003;</span> Bonus</p>
+                  <p><span class="check">&#10003;</span> Splits</p>
+                  <p><span class="check">&#10003;</span> Dividend</p>
+                  <p><span class="check">&#10003;</span> Tax</p>
+                </div>
+              </div>
+            </div>
+            <div class="slide" id="slide2">
+              <div class="card" style="border-color: #4a90e2;">
+                <h2>Mutual Funds</h2>
+                <div class="features">
+                  <p><span class="check">&#10003;</span> SIP</p>
+                  <p><span class="check">&#10003;</span> STP</p>
+                  <p><span class="check">&#10003;</span> SWP</p>
+                  <p><span class="check">&#10003;</span> Dividend</p>
+                </div>
+              </div>
+            </div>
+          
+            <div class="slide" id="slide3">
+              <div class="card" style="border-color: #ffa500;">
+                <h2>ULIP</h2>
+                <div class="features">
+                  <p><span class="check">&#10003;</span> Premium</p>
+                  <p><span class="check">&#10003;</span> Reminders</p>
+                  <p><span class="check">&#10003;</span> Tax Benefits</p>
+                </div>
+              </div>
+            </div>
+          
+            <div class="nav-dots">
+              <span class="dot active" onclick="showSlide(1)"></span>
+              <span class="dot" onclick="showSlide(2)"></span>
+              <span class="dot" onclick="showSlide(3)"></span>
+             
+            </div>
+          </div>
+          
+    </div>
+    <div class="sixteen">
+        <img src="images/34.png" style="width: 100%; height: 10%;">
+    </div>
+    <div class="seventeen">
+        <img src="images/35.png" style="width: 100%; height:10%">
+        <img src="images/36.png" style="width: 100%; height: 10%;">
+    </div>
+    <div class="eighteen">
+        <h2>Have more questions? Don’t forget to visit our FAQ section!</h2>
+        <button class="button8" id="button8">Visit FAQS</button>
+    </div>
+    <div class="nineteen">
+        <img src="images/38.png" style="height: 250px;">
+    </div>
+    <div class="section">
+        <h1>Sections</h1>
+        <div class="section1">
+          <div class="section1_1">
+          <a href="#home">Home</a>
+        </div>   
+        <div class="section1_2">
+        <a href="#view more">Loans</a>
+      </div>
+       <div class="section1_3">
+          <a href="#view more">Mutual funds</a>
+        </div>
+        </div>
+        <div class="section2">
+            <div class="section2_1">
+          <a href="#view moreport">Markets</a>
+            </div>
+            <div class="section2_2">
+          <a href="#view more">Fixed Deposits</a>
+            </div>
+            <div class="section2_3">
+          <a href="#view more">Watchlist</a>
+            </div>
+        </div>
+        <div class="section3">
+          <div class="section3_1">
+        <a href="#view more">Sitemap</a>
+          </div>
+          <div class="section3_2">
+        <a href="#view more">Coronavirus</a>
+          </div>
+          <div class="section3_3">
+        <a href="#view more">MF List</a>
+          </div>
+        </div>
+      </div>
+      <div class="twenty">
+        <br>
+        <br>
+        <a href="#link" style="margin-left: 80%;">Desktop Version>></a>
+        <br>
+        <br>
+       <p>Follow us on</p>
+       <div class="twenty_1">
+        <img src="images/39.png">
+        <img src="images/40.png">
+        <img src="images/41.png">
+       </div>
+       <p>Available On</p>
+       <div class="twenty_2">
+        <img src="images/42.png">
+        <img src="images/43.png">
+        <img src="images/44.png">
+       </div>
+
+      </div>
+      <div class="twentyone">
+        <div class="2_1">
+
+            Disclaimer | 
+        </div>
+        <div class="2_2">
+
+            Terms & Conditions |
+        </div>
+        <div class="2_3">
+
+            Privacy Policy | 
+        </div>
+        <div class="2_4">
+
+            FAQs
+        </div>
+      </div>
+      <div class="twentytwo">
+        <div class="twenty_8">
+
+            <p>Network 18 Sites:</p>
+        </div>
+        <div class="twenty_1">
+            <p>News18 | </p>
+        </div>
+        <div class="twenty_2">
+            <p> Firstpost |</p>
+        </div>
+        <div class="twenty_3">
+            
+            <p> CNBC TV18 |</p>
+        </div>
+        <div class="twenty_4">
+            <p> In.com |</p>
+        </div>
+        <div class="twenty_5">
+            <p>  Cricketnext |</p>
+        </div>
+        <div class="twenty_6">
+            <p>Topper Learning </p>
+        </div>
+     </div>
+     <div class="tt">
+        <p>Copyright © Network18 Media & Investments Limited</p>
+     </div>
+     <div class="pp">
+        All rights resderved. Reproduction of news articles, photos, videos or any other content in whole or in part in any form or medium without express writtern permission of moneycontrol.com is prohibited.
+     </div>
+    <script src="index4.js"></script>
+</body>
+</html>

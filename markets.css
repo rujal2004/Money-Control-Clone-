@@ -1,0 +1,217 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow:auto;
+  }
+
+  .animation {
+    position: fixed;
+    top: -150px; 
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background: linear-gradient( #431c76, #341453);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: 20px;
+    z-index: 999;
+    animation: upDown 6s ease-in-out infinite; 
+  }
+
+  .banner .text {
+    font-size: 24px;
+  }
+
+  .banner .offer-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: #ffd700;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .banner .gift {
+    width: 100px;
+    animation: giftGlow 2s infinite ease-in-out;
+  }
+
+  .banner .arrow {
+    font-size: 40px;
+    font-weight: bold;
+    animation: arrowBlink 1s infinite;
+  }
+
+
+  @keyframes upDown {
+    0% {
+      top: -150px; 
+    }
+    20% {
+      top: 0; 
+    }
+  }
+
+  @keyframes giftGlow {
+    0%, 100% {
+      transform: scale(1);
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+    }
+    50% {
+      transform: scale(1.1);
+      box-shadow: 0 0 20px rgba(255, 255, 255, 1);
+    }
+  }
+
+  @keyframes arrowBlink {
+    50% {
+      color: #ffd700;
+    }
+  }
+  .navlinks li{
+    margin-top: 180px;
+    display: flex;
+    cursor: pointer;
+  }
+  .navbar {
+    display: flex;
+    background-color: #f5f5f5;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+    margin-top: 200px;
+  }
+
+  .navbar a {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .navbar a.active {
+    color: #fff;
+    background-color: #0073e6;
+    border-radius: 5px;
+  }
+
+  .carousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #eef4fb;
+    padding: 20px;
+  }
+
+  .carousel-content {
+    display: flex;
+    flex-direction: row;
+    background-color: #1d4b8f;
+    color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 90%;
+    max-width: 800px;
+  }
+
+  .carousel-left img {
+    width: 250px;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .carousel-main {
+    flex: 1;
+    padding: 20px;
+  }
+
+  .carousel-main h3 {
+    margin: 0 0 10px;
+  }
+
+  .carousel-main p {
+    font-size: 14px;
+    color: #ccc;
+  }
+
+  .carousel-right {
+    padding: 20px;
+    background: white;
+    color: black;
+  }
+
+  .carousel-right ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .carousel-right ul li {
+    margin: 10px 0;
+    cursor: pointer;
+  }
+
+  .carousel-right ul li:hover {
+    text-decoration: underline;
+  }
+  .first{
+    justify-content: center;
+    text-align: center;
+    padding: 8px;
+    color: #3a5d7f;
+    font-size: larger;
+  }
+  .icontainer{
+    border-collapse: collapse;
+    width: 50%;
+ 
+  }
+  .icontainer th,td{
+    border: 1px solid #ddd; 
+    text-align: left; 
+    padding: 10px; 
+  }
+  th {
+    background-color: #f4f4f4;
+  }
+  td.index-column {
+    width: 40%; 
+  }
+  .com{
+    gap: 20px;
+    color: #0073e6;
+    font-size: large;
+    display: flex;
+    cursor: pointer;
+   }
+   .Indian:hover{
+  text-decoration: underline;
+}
+.Global:hover{
+  text-decoration: underline;
+}
+  .icontainer{
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 8px;
+  }
+
+
+  .stockscontainer{
+    border-collapse: collapse;
+    width: 50%;
+ 
+  }
+  .stockscontainer th,td{
+    border: 1px solid #ddd; 
+    text-align: left; 
+    padding: 10px; 
+  }
+  .hidden {
+    display: none;
+}

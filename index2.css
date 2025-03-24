@@ -1,0 +1,23 @@
+html{
+    background-color: rgb(128, 105, 124);
+}
+.first h1{
+    text-decoration: underline;
+    font-weight: bold;
+    justify-content: center;
+    text-align: center;
+
+}
+.second {
+    margin-top: 25%;
+    justify-content: center;
+    text-align: center;
+    box-sizing: 50%;
+}
+.third{
+    margin-top: 20px;
+    gap: 20%;
+    justify-content: center;
+    text-align: center;
+    border-left: 50%;
+}
