@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to finance tracker</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!--<div class="box">
+      <div class="search-box">
+        <input type="text" placeholder="type here...">
+        <label for="" class="icon">
+          <i class="fas fa-search"></i>
+        </label>
+      </div>-->
+
+      <div class="top-navbar">
+      <header class="navbar2">
+      <div class="menuicon" onclick="togglesidebar()">
+        ☰ 
+      </div>
+       <!--<div class="menuicon-actions">
+        <button>login</button>
+        <button>Signup</button>
+        <select>
+          <option>English</option>
+          <option>Hindi</option>
+        </select>
+      </div>-->
+    </header>
+    <div class="sidebar" id = "sidebar">
+      <ul>
+        <li>Home</li>
+        <li>My Feed</li>
+        <li>Get Premium Content</li>
+        <li>Loans <span class="tag">Up to ₹15 Lakhs</span></li>
+        <li>₹100 Cash Reward</li>
+        <li>Fixed Deposit <span class="new-tag">New</span></li>
+        <li>Markets</li>
+        <li>Seasonality Analysis <span class="new-tag">New</span></li>
+        <li>Muhurat Trading <span class="new-tag">New</span></li>
+        <li>Web Stories</li>
+        <li>Tax Calculator <span class="new-tag">New</span></li>
+        <li>Forum <span class="new-tag">New</span></li>
+      </ul>
+    </div>
+  
+      <div class="language">
+        <div class="language5" onclick="togglelanguage2()">
+          <select id="language-selector" onchange="changeLanguage()">
+            <option value="en">English</option>
+            <option value="hi">Hiindi</option>
+          </select>
+       </div>
+       <div class="language2" id="language2">
+       </div>
+      </div>
+      <!--<div class="specials">
+        <h2 onclick="togglespecials()">Specials</h2>
+        <div class="specialsimages" id="specialsimages">
+          <button class="specialsbutton left" onclick="scrollspecials2(-1)">&#9664;</button>
+           <div class="specials2" id="specials2">-->
+            <section class="specials-carousel">
+              <h2 onclick="toggleSpecials()">Specials</h2> <!-- Toggle on click -->
+              <div class="carousel-container" id="carousel-container">
+                <button class="carousel-button left" onclick="scrollCarousel(-1)">&#9664;</button>
+                <div class="carousel" id="carousel">
+          
+             <img src="images/14th.png" alt="specials1">
+             <img src="images/15th.png" alt="specials2">
+             <img src="images/16th.png"  alt="specials3">
+             <img src="images/17.png" alt="specials4">
+
+           </div>
+          <!-- <button class="specialsbutton right" onclick="scrollspecials2(1)">&#9654;</button>-->
+          <button class="carousel-button right" onclick="scrollCarousel(1)">&#9654;</button>
+        </div>
+      </section>
+       <!-- </div>
+      </div>-->
+    
+
+      <div class="highlight">₹ 15 LAKHS</div>
+      <div class="searchbar ">
+        <input type="searchbar" id="searchbar" placeholder="Quotes, News, Mutual Fund NAVs">
+        <button class="search" onclick="search()">search</button>
+      </div>
+      <div class="nav-buttons">
+        <div class="nav-button">My Feed</div>
+        <div class="nav-button premium">Premium</div>
+        <div class="login">
+            <div class="login-icon">👤</div> Hello, Login
+        </div>
+      </div>
+    </div>
+    <div class="a">
+      <img src="images/10th.png"/>
+    </div>
+    <div class="navbar1">
+      <div class="navbar1_1" onclick="togglenavbar()">
+      <a href="#home" style ="color:black" >Home</a>
+      <div class="navbar1_1_2" id="navbar1_1_2" >
+        <div class="navbar1_1_3">
+          <ul>
+            <li>indian indicies</li>
+             <li>Stock Action</li>
+              <li>allstats</li>
+              <li>top loosers</li>
+              <li>only buyers</li>
+            </li>
+          </ul>
+          <ul>
+            <li>global markets</li>
+            <li>US markets</li>
+            <li>Seasonality Analyst</li>
+            <li>Market Action</li>
+          </ul>
+          <ul>
+            <li>Earnings</li>
+            <li>Commodity</li>
+            <li>pinn</li>
+          
+          </ul>
+        </div>
+      </div>
+        </div>
+      <a href="#market" style ="color:black" > Market</a>
+      <div class="navbar1_3">
+        <div class="navbar1_3_1" onclick="togglenavbar1()">
+        <a href="#news" style ="color:black" > News</a>
+        <div class="navbar1_3_2" id="navbar1_3_2">
+          <div class="navbar1_3_3">
+            <ul>
+          <li>Latest News</li>
+          <li>Buisness</li>
+          <li>Economy</li>
+          <li>Mutual Funds</li>
+          <li>SME</li>
+        </ul>
+        <ul>
+          <li>Nation and world</li>
+          <li>Markets</li>
+          <li>Specials</li>
+            </ul>
+            <ul>
+              <li>Technology</li>
+              <li>Media</li>
+              <li>Cryptocurrency</li>
+            </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<a href="#tech" style ="color:black" > Tech</a>
+<a href="index4.html" style ="color:black" > Portfolio</a>
+<a href="watchlist.html" style ="color:black" > Watchlist</a>
+<a href="#commodities" style ="color:black" > commodities</a>
+<div class="navbar1_6">
+  <div class="navbar1_6_1" onclick="togglenavbar5()">
+      <a href="#mutual funds" style ="color:black" > Mutual Funds</a>
+      <div class="navbar1_6_2" id="navbar1_6_2">
+        <div class="navbar1_6_3">
+          <ul>
+          <li>Home</li>
+          <li>Find Fund</li>
+            <li>Top Ranked Funds</li>
+           <li>Performance Tracker</li>
+           <li>SIP Performance Tracker</li>
+            <li>ETF Performance</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <section class="hero">
+      <div class="gh">
+    <div class="first"> 
+      <h1>Finance Tracker by Moneycontrol</h1>
+    </div>
+    <div class="second">
+      <h3>
+        Gain control over your finances by leveraging the Account Aggregator
+        ecosystem Explore Now
+      </h3>
+    </div>
+    <button class="box1">Explore Now</button>
+    <div class="hhh">
+      <div class="ll">
+      <img src="images/1st.png">
+      <img src="images/86.jpg">
+      <img src="images/89.jpg">
+      <img src="images/90.jpg">
+     
+    </div>
+    </div>
+      </div>
+  </section>
+   <div class="f">Features and Benefits</div>
+    <div class="all">
+      <div class="card-container">
+        <div class="card" onclick="flipCard(this)">
+            <div class="card-inner">
+                <!-- Front Side -->
+                <div class="card-front">
+                  <img src="images/2st.png" alt="View Balance across bank account" class="card-icon"> 
+                    <p class="card-title">View balances across bank accounts</p>
+                </div>
+                <!-- Back Side -->
+                <div class="card-back">
+                    <p class="card-info">Easily view all your bank balances in one place.</p>
+                </div>
+            </div>
+        </div>
+          <div class="card" onclick="flipCard(this)">
+            <div class="card-inner">
+              <div class="card-front">
+        <img src = "images/3rd.png" />
+        <p class="card-title">One Place for all transactions</p>
+              </div>
+              <div class="card-back">
+                <p class="card-info">Track all your transactions effortlessly.</p>
+              </div>
+      </div>
+          </div>
+          <div class="card" onclick="flipCard(this)">
+            <div class="card-inner">
+              <div class="card-front">
+        <img src = "images/4th.png" />
+        <p class="card-title">See where you spend the most</p>
+              </div>
+              <div class="card-back">
+                <p class="card-info">Get real-time categorization of your expenses so you know where your money goes every month.</p>
+              </div>
+      </div>
+          </div>
+    </div>
+    </div>
+  
+  </section>
+    <div class="container">
+      <h2>How To Use Finance Tracker?</h2>
+      <div class="step">
+        <img src="images/5th.png" alt="Download Icon" />
+        <h3 class="step-number">STEP 01</h3>
+        <p>Download the app</p>
+      </div>
+      <div class="arrow"></div>
+      <div class="step">
+        <img src="images/6th.png" alt="Tap Icon" />
+        <h3 class="step-number">STEP 02</h3>
+        <p>Tap on Finance Tracker</p>
+      </div>
+      <div class="arrow"></div>
+      <div class="step">
+        <img src="images/7th.png" alt="Step 3 Image" />
+        <h3 class="step-number">STEP 03</h3>
+        <p>Verify your mobile number</p>
+      </div>
+      <div class="arrow"></div>
+      <div class="step">
+        <img src="images/8th.png" />
+        <h3 class="step-number">STEP 04</h3>
+        <p>Link the accounts of your choice</p>
+      </div>
+    </div>
+  
+    <div class="eigth">
+      <button class="button1" onclick="location.href='index.html'">Explore Now</button>
+    </div>
+    <div class="nine">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ZqMotyhgcc4?si=WXCykpAzCnLO1mk5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div class="ten">
+      <img src="images/9th.png">
+    </div>
+    <div class="frequent">
+      <div class="eleven">
+        <h1>
+          Frequently Asked Questions
+      </div>
+      <div class="twelve">
+        <button class="accordion-button" onclick="toggleAccordion()">What is an Account Aggregator?</button>
+        <div class="accordion-content">I
+          <p>An account aggregator is an RBI regulated system that lets you view and manage access to your financial data and asset information including your bank accounts, stocks, FDs, RDs, etc.</p>
+      </div>
+      <button class="accordion-button1" onclick="toggleAccordion1()">Is Account Aggregator safe?</button>
+      <div class="accordion-content1">I
+        <p>An Account Aggregator is an RBI regulated entity (with an NBFC-AA license) hence is completely safe to use.</p>
+    </div>
+    <button class="accordion-button2" onclick="toggleAccordion2()">Which banks are eligible for Account Aggregator?</button>
+      <div class="accordion-content2">I
+        <p>There are several banks such as ICICI Bank, Axis Bank, ICICI Bank, HDFC Bank, Kotak Mahindra Bank, Indian Bank, Punjab National Bank, Bank of Baroda, etc. that are a part of the account aggregator network. Please check Finance Tracker by moneycontrol to check if your bank is listed.</p>
+    </div>
+      </div>
+    </div>
+    <div class="thirteen">
+      <a href="index3.html">View More</a>
+    </div>
+    <div class="section">
+      <h1>Sections</h1>
+      <div class="section1">
+        <div class="section1_1">
+        <a href="index2.html" target="_blank">Home</a>
+      </div>   
+      <div class="section1_2">
+      <a href="#view more">Live Tv shows</a>
+    </div>
+     <div class="section1_3">
+        <a href="#view more">Mutual funds</a>
+      </div>
+      </div>
+      <div class="section2">
+          <div class="section2_1">
+        <a href="#view moreport">Portfolio</a>
+          </div>
+          <div class="section2_2">
+        <a href="#view more">Markets</a>
+          </div>
+          <div class="section2_3">
+        <a href="#view more">Watchlist</a>
+          </div>
+      </div>
+      <div class="section3">
+        <div class="section3_1">
+      <a href="#view more">Currencies</a>
+        </div>
+        <div class="section3_2">
+      <a href="#view more">IPO</a>
+        </div>
+        <div class="section3_3">
+      <a href="#view more">Forum</a>
+        </div>
+      </div>
+    </div>
+    <div class="navbar">
+      <a href="index2.html" target="_blank" class="nav-item">
+          <img src="images/11.png" alt="Home">
+          <span>HOME</span>
+      </a>
+      <a href="#" class="nav-item">
+          <img src="images/12th.png" alt="Markets">
+          <span>MARKETS</span>
+      </a>
+      <a href="#" class="nav-item credit-score">
+          <span>CREDIT <br>SCORE</span>
+      </a>
+      <a href="#" class="nav-item">
+          <img src="images/13th.png" alt="News">
+          <span>NEWS</span>
+      </a>
+      <a href="index4.html" class="nav-item">
+          <img src="images/14th.png" alt="Portfolio">
+          <span>PORTFOLIO</span>
+      </a>
+  </div>
+  <script src="index.js"></script>
+  </body>
+</html>
